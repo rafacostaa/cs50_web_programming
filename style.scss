@@ -1,0 +1,30 @@
+// Inhenrance
+// Variables
+
+form{
+    display: flex;
+    flex-direction: column;
+    input:first-child{
+        border: 1px solid blue;
+    }
+}
+
+.google-logo{
+    background-image: url('./google_logo.svg');
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 270px;
+    border: 1px solid red;
+    padding-bottom: 3vh;
+}
+
+body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
