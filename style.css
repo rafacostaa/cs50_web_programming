@@ -19,11 +19,11 @@ img {
   padding-bottom: 4vh;
 }
 
-form {
+.form-search {
   display: flex;
   flex-direction: column;
 }
-form #search {
+.form-search #search {
   width: 70vh;
   padding: 1.7vh;
   font-size: 16px;
@@ -41,11 +41,11 @@ form #search {
   transform: translate(-50%, -50%);
 }
 
-#buttons {
+.buttons {
   display: inline-flex;
   justify-content: center;
 }
-#buttons input {
+.buttons input {
   padding: 1.5vh;
   margin: 30px 15px;
   border: none;
@@ -53,6 +53,35 @@ form #search {
   background-color: #f8f9fa;
   color: #3c4043;
   font-size: 14px;
+}
+
+.advanced input {
+  padding: 1.2vh;
+  background-color: #4d90fe;
+  color: #fff;
+  border: 1px solid #3079ed;
+}
+
+.advanced-form {
+  display: grid;
+  grid-template-columns: 200px 60%;
+  grid-row-gap: 10px;
+}
+.advanced-form label, .advanced-form input {
+  padding: 5px;
+  text-align: left;
+}
+.advanced-form input {
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  width: 50%;
+  height: 25px;
+  padding: 1px 8px;
+  font-size: 13px;
+}
+.advanced-form input:focus {
+  outline: none !important;
+  border: 1px solid #4d90fe;
 }
 
 /*# sourceMappingURL=style.css.map */

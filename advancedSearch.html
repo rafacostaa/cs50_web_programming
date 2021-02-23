@@ -6,13 +6,22 @@
     </head>
     <body>
         <div class="toolbar">
+            <img src="./google_logo.svg" alt="google-logo">
             <a href="./index.html">Google Search</a>
         </div>
-        <div class="container">
-            <img src="./google_logo.svg" alt="google-logo">
-            <form action="https://google.com/search">
-                <input id="search" type="text" name="q">
-                <div id="buttons">
+        <div>
+            <span>Find pages with...</span>
+            <form class= "advanced-form" action="https://google.com/search">
+                <label for="option-1">all these words:</label>
+                <input id="option-1" type="text" name="q1">
+                <label for="option-2">this exact word or phrase:</label>
+                <input id="option-2" type="text" name="q2">
+                <label for="option-3">any of these words:</label>
+                <input id="option-3" type="text" name="q3">
+                <label for="option-4">none of these words:</label>
+                <input id="option-4" type="text" name="q4">
+             
+                <div class="buttons advanced">
                     <input type="submit" value="Google Advanced Search">
                 </div>
             </form>

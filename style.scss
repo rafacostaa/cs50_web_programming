@@ -1,9 +1,14 @@
 // Inhenrance
 // Variables
 $palette-white-light: #dfe1e5;
+$palette-white-medium: #d9d9d9;
+$palette-white-main: #fff;
 $palette-gray-light: #f8f9fa;
-$palette-gray-main: #3c4043;
+$palette-gray-medium: #c0c0c0;
+$palette-gray-dark: #3c4043;
 $palette-black-light: rgba(0,0,0,0.87);
+$palette-blue-main: #4d90fe;
+$palette-blue-dark: #3079ed;
 $font-size-anchor: 13px;
 $font-size-button: 14px;
 $font-size-search: 16px;
@@ -30,7 +35,7 @@ img{
     padding-bottom: 4vh;
 }
 
-form{
+.form-search{
     display: flex;
     flex-direction: column;
     
@@ -53,7 +58,7 @@ form{
     transform: translate(-50%, -50%);
 }
 
-#buttons{
+.buttons{
     display: inline-flex;
     justify-content: center;
 
@@ -63,8 +68,47 @@ form{
     border: none;
     border-radius: 5px;
     background-color: $palette-gray-light;
-    color: $palette-gray-main;
+    color: $palette-gray-dark;
     font-size: $font-size-button;
   }
 }
+
+.advanced{
+    input{
+        padding: 1.2vh;
+        background-color: $palette-blue-main;
+        color: $palette-white-main;
+        border: 1px solid $palette-blue-dark;
+    }
+}
+
+.advanced-form{
+    display: grid;
+    grid-template-columns: 200px 60%;
+    grid-row-gap: 10px;
+
+    
+    label, input{
+        padding: 5px;
+        text-align: left;
+    }
+    
+    input{
+        border: 1px solid $palette-white-medium;
+        border-top: 1px solid $palette-gray-medium;
+        width: 50%;
+        height: 25px;
+        padding: 1px 8px;
+        font-size: 13px;
+
+    }
+
+    input:focus {
+        outline: none !important;
+        border: 1px solid $palette-blue-main;
+    }
+}
+
+
+
 
