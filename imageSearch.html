@@ -5,10 +5,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="google-logo"></div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Image Search">
-        </form>
+        <div class="toolbar">
+            <a href="./index.html">Google Search</a>
+        </div>
+        <div class="container">
+            <img src="./google_logo.svg" alt="google-logo">
+            <form action="https://google.com/search">
+                <input id="search" type="text" name="q">
+                <div id="buttons">
+                    <input type="submit" value="Google Image Search">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
