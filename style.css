@@ -1,9 +1,16 @@
-form {
-  display: flex;
-  flex-direction: column;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-form input:first-child {
-  border: 1px solid blue;
+
+.toolbar {
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: flex-end;
+}
+.toolbar a {
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 13px;
 }
 
 .google-logo {
@@ -15,15 +22,40 @@ form input:first-child {
   padding-bottom: 3vh;
 }
 
-body {
+form {
+  display: flex;
+  flex-direction: column;
+}
+form #search {
+  border: 1px solid blue;
+  padding: 15px;
+  width: 70vh;
+  font-size: 16px;
+}
+
+.container {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid green;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+#buttons {
+  display: inline-flex;
+  justify-content: center;
+}
+#buttons input {
+  padding: 10px;
+  margin: 30px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #3c4043;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
