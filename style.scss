@@ -4,6 +4,7 @@ $palette-white-light: #dfe1e5;
 $palette-white-medium: #d9d9d9;
 $palette-white-main: #fff;
 $palette-gray-light: #f8f9fa;
+$palette-gray-main: #f1f1f1;
 $palette-gray-medium: #c0c0c0;
 $palette-gray-dark: #3c4043;
 $palette-black-light: rgba(0,0,0,0.87);
@@ -16,6 +17,7 @@ $font-size-search: 16px;
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .toolbar {
@@ -29,12 +31,42 @@ body{
         font-size: $font-size-anchor;
         color: $palette-black-light;
     }
- }
-
-img{
-    height: 100%;
-    padding-bottom: 4vh;
 }
+
+.advanced-toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: $palette-gray-main;
+    height: 60px;
+
+    a{
+        text-decoration: none;
+        padding: 0 5px;
+        font-size: $font-size-anchor;
+        color: $palette-black-light;
+    }
+
+    img{
+        height: 60%;
+        width: auto;
+    }
+}
+
+.header{
+    border-bottom: 1px solid $palette-white-medium;
+    padding: 25px 0;
+    margin-bottom: 35px;
+
+    label{
+        color: $palette-red-main;
+        font-size: 20px;
+        margin: 0 35px;
+    }
+}
+
+
 
 .form-search{
     display: flex;
@@ -57,6 +89,11 @@ img{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    img{
+        height: 100%;
+        padding-bottom: 4vh;
+    }
 }
 
 .buttons{
@@ -122,17 +159,7 @@ img{
     }
 }
 
-.header{
-    border-bottom: 1px solid $palette-white-medium;
-    padding: 25px 0;
-    margin-bottom: 35px;
 
-    label{
-        color: $palette-red-main;
-        font-size: 20px;
-        margin: 0 35px;
-    }
-}
 
 
 
