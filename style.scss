@@ -62,8 +62,8 @@ img{
 .buttons{
     display: inline-flex;
     justify-content: center;
-
-  input{
+    
+    input{
     padding: 1.5vh;
     margin: 30px 15px;
     border: none;
@@ -74,43 +74,50 @@ img{
   }
 }
 
-.advanced{
-    input{
-        padding: 1.2vh;
-        background-color: $palette-blue-main;
-        color: $palette-white-main;
-        border: 1px solid $palette-blue-dark;
-    }
-}
-
 .container-advanced{
     padding: 0 35px;
     
     .advanced-form{
-        display: grid;
-        grid-template-columns: 200px 60%;
-        grid-row-gap: 10px;
         padding-top: 10px;
         
-        label, input{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            font-size: $font-size-anchor;
-        }
-        
-        input{
-            border: 1px solid $palette-white-medium;
-            border-top: 1px solid $palette-gray-medium;
-            width: 50%;
-            height: 25px;
-            padding: 1px 8px;
-            font-size: 13px;
-        }
+        .advanced-form-items{
+            display: grid;
+            grid-template-columns: 200px 60%;
+            grid-row-gap: 10px;  
+
+            label, input{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: $font-size-anchor;
+            }
+            
+            input{
+                border: 1px solid $palette-white-medium;
+                border-top: 1px solid $palette-gray-medium;
+                width: 60%;
+                height: 25px;
+                padding: 1px 8px;
+                font-size: 13px;
     
-        input:focus {
-            outline: none !important;
-            border: 1px solid $palette-blue-main;
+                &:focus{
+                    outline: none !important;
+                    border: 1px solid $palette-blue-main;
+                }
+            }
+        }
+
+        .buttons{
+          width: 100%;
+            input{
+                margin-right: 0;
+                padding: 1vh;
+                background-color: $palette-blue-main;
+                color: $palette-white-main;
+                border: 1px solid $palette-blue-dark;
+                font-size: 11px;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -119,6 +126,7 @@ img{
     border-bottom: 1px solid $palette-white-medium;
     padding: 25px 0;
     margin-bottom: 35px;
+
     label{
         color: $palette-red-main;
         font-size: 20px;
