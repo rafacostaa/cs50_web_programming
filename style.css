@@ -106,11 +106,11 @@ body {
 }
 .container-advanced .advanced-form {
   padding-top: 10px;
-  width: 50%;
+  width: auto;
 }
 .container-advanced .advanced-form .advanced-form-items {
   display: grid;
-  grid-template-columns: 200px 117%;
+  grid-template-columns: 200px 50%;
   grid-row-gap: 10px;
 }
 .container-advanced .advanced-form .advanced-form-items label, .container-advanced .advanced-form .advanced-form-items input {
@@ -135,7 +135,7 @@ body {
   padding-top: 10px;
   display: flex;
   justify-content: flex-end;
-  width: 93.5%;
+  max-width: 41.5%;
 }
 .container-advanced .advanced-form .button-advanced input {
   margin-right: 0;

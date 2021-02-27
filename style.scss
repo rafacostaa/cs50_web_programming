@@ -134,11 +134,13 @@ body{
     
     .advanced-form{
         padding-top: 10px;
-        width: 50%;
+        width: auto;
         
+       
+
         .advanced-form-items{
             display: grid;
-            grid-template-columns: 200px 117%;
+            grid-template-columns: 200px 50%;
             grid-row-gap: 10px;
          
             label, input{
@@ -167,7 +169,7 @@ body{
             padding-top: 10px;
             display: flex;
             justify-content: flex-end;
-            width: 93.5%;
+            max-width: 41.5%;
               input{
                   margin-right: 0;
                   padding: 1vh;
