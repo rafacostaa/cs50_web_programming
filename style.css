@@ -133,8 +133,9 @@ body {
 }
 .container-advanced .advanced-form .button-advanced {
   padding-top: 10px;
-  justify-content: flex-end;
   display: flex;
+  justify-content: flex-end;
+  width: 93.5%;
 }
 .container-advanced .advanced-form .button-advanced input {
   margin-right: 0;
