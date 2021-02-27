@@ -15,15 +15,17 @@
             <form class= "advanced-form" action="https://google.com/search">
                 <div class="advanced-form-items">
                     <label for="option-1">all these words:</label>
-                    <input id="option-1" type="text" name="q1">
+                    <input id="option-1" type="text" name="as_q">
                     <label for="option-2">this exact word or phrase:</label>
-                    <input id="option-2" type="text" name="q2">
+                    <input id="option-2" type="text" name="as_epq"> 
                     <label for="option-3">any of these words:</label>
-                    <input id="option-3" type="text" name="q3">
+                    <input id="option-3" type="text" name="as_oq">
                     <label for="option-4">none of these words:</label>
-                    <input id="option-4" type="text" name="q4">
-                </div>
-             
+                    <input id="option-4" type="text" name="as_eq">
+                </div>  
+                <input hidden type="text" name="as_qdr" value="all">
+                <input hidden type="text" name="as_occt" value="any">
+                <input hidden type="text" name="safe" value="images">        
                 <div class="buttons">
                     <input type="submit" value="Advanced Search">
                 </div>
